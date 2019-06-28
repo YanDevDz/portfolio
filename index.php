@@ -17,6 +17,7 @@
     	}
     	body {
     		color: white;
+    		terma : false;
     	}
     	ul {
     		line-height: 2;
