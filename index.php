@@ -395,7 +395,7 @@
     	      			</div>
     	      			<div class="col-lg-12" style="padding: 25px;padding-top: 50px;">
     	      				<h5>
-    	      					Copyright @ 2017 MarvelTheme all right reserved, designed by M S Newaz
+    	      					Contact Me <a href="mailto:eplicseby@gmail.com"></a>
     	      				</h5>
     	      			</div>
     	      		</div>
