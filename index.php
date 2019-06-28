@@ -10,7 +10,7 @@
      require "public/header.global.html";
      ?>
 
-    <title>Me <3</title>
+    <title>Me ❤</title>
     <style type="text/css">
     	html {
     	  scroll-behavior: smooth;
@@ -132,6 +132,9 @@
 		  	top: 11px!important;
 		  	left: 40px!important;
 		  	transition: all 0.6s;
+		  }
+		  .services-icon, .contact-icon {
+		  	font-size: 50px !important;cursor: pointer;
 		  }
     </style>
   </head>
@@ -327,7 +330,7 @@
 	      			<div class="col-lg-12 " style="padding: 25px;height: 300px;background-color: #2a2a2a">
 	      				<div class="row">
 	      					<div class="col-lg-3" style="padding: 15px;">
-		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
+		      					<i class="fas fa-pencil-alt services-icon"></i>
 	      						<h6 style="margin-top: 13px">Product Design</h6>
 	      						<p style="color: #aaaaaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	      						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -339,14 +342,14 @@
 	      						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 	      					</div>
 	      					<div class="col-lg-3" style="padding: 15px;">
-		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
+		      					<i class="fas fa-mobile-alt services-icon"></i>
 	      						<h6 style="margin-top: 13px">App Developpment</h6>
 	      						<p style="color: #aaaaaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	      						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 	      					</div>
 	      					<div class="col-lg-3" style="padding: 15px;">
-		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
-	      						<h6 style="margin-top: 13px">Sécurité</h6>
+		      					<i class="fas fa-fingerprint services-icon"></i>
+	      						<h6 style="margin-top: 13px">Security</h6>
 	      						<p style="color: #aaaaaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	      						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 	      					</div>
@@ -381,7 +384,6 @@
 	      		</div>	
 	      	</div>
 
-	      	
 	      	<div class="col-lg-12" style="text-align: center;">
 	      		<div class="row" >
 	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
@@ -412,7 +414,7 @@
         <!-- My services -->
         <!-- My services -->
         <div class="container-fluid" style="background-color: black">
-        	<div class="container" style="padding-bottom: 150px;" id="contact">
+        	<div class="container" id="contact">
     	      <div class="row" style="text-align: center;">
     	      	<div class="col-lg-12" style="text-align: center;margin-top: 50px;margin-bottom: 45px;">
     	      		<h1 style="position: relative;margin-top:45px;font-weight: bold;">Wanna Start Work with me?</h1>
@@ -424,21 +426,22 @@
     	      			<div class="col-lg-12 " style="padding: 25px;background-color: #2a2a2a;">
     	      				<div class="row" style="margin-top: 15px;">
     	      					<div class="offset-lg-1 col-lg-3" style="padding: 15px;">
-    		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
+    		      					<i class="fas fa-phone contact-icon"></i>
     	      						<p style="margin-top: 13px;color:#aaaaaa;">
-    	      							+213 781 00 29 20 <br>
-    	      							+213 556 68 82 10
+    	      							+213 781 00 29 ** <br>
+    	      							+213 556 68 82 **
     	      						</p>
     	      					</div>
     	      					<div class="col-lg-4" style="padding: 15px;">
-    		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
+    		      					<!-- <i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i> -->
+    		      					<i class="fas fa-map-signs contact-icon"></i>
     	      						<p style="margin-top: 13px;color:#aaaaaa;">
     	      							28 Green Tower, Street Name, <br>
 													New York City, USA
     	      						</p>
     	      					</div>
     	      					<div class="col-lg-3" style="padding: 15px;">
-    		      					<i class="fab fa-instagram" style="font-size: 50px !important;cursor: pointer;"></i>
+    		      					<i class="fas fa-at contact-icon"></i>
     	      						<p style="margin-top: 13px;color:#aaaaaa;">
     	      							eplicseby@gmail.com
     	      						</p>
@@ -466,9 +469,9 @@
     	      					</div>
     	      				</div>
     	      			</div>
-    	      			<div class="col-lg-12" style="padding: 25px;padding-top: 50px;">
+    	      			<div class="col-lg-12" style="padding-top: 135px;">
     	      				<h5>
-    	      					Contact Me <a href="mailto:eplicseby@gmail.com"></a>
+    	      					Developped by <a href="mailto:eplicseby@gmail.com">Yan<b>Dev</b></a> with ❤ <a href="mailto:eplicseby@gmail.com"></a>
     	      				</h5>
     	      			</div>
     	      		</div>
