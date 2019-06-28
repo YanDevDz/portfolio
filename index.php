@@ -92,57 +92,94 @@
     	}
     	.title-logo {
     		font-size: 22px;
-		    position: absolute;
-		    left: 80px;
-		    top: 0;
-		    bottom: 0;
-		    margin: auto;
-		    right: 0;
-		    line-height: 3;
+    		position: absolute;
+    		left: 95px;
+    		top: 21px;
+    		bottom: 0;
+    		margin: auto;
+    		right: 0;
+    		line-height: 3;
+    		transition: all 0.4s;
     	}
+    	/* fixed header */
+    	.fixed {
+		    position: fixed;
+		    top:0;
+		    left:0;
+		    right:0;
+		    background-color: black;
+		    z-index: 2;
+		    height: 90px!important;
+		    transition: all 0.7s;
+		  }
+		  .header {
+		  	transition: all 0.7s;
+		  	height: 120px;
+		  }
+		  .fixed ul {
+		  	line-height: 0.8!important;
+		  	transition: all 1s;
+		  }
+		  .fixed .wrapper-logo {
+		  	transform: scale(0);
+		  	transition: all 0.5s;
+		  }
+		  .wrapper-logo {
+		  	transform: scale(1);
+		  	transition: all 0.5s;
+		  }
+		  .fixed .title-logo {
+		  	top: 11px!important;
+		  	left: 40px!important;
+		  	transition: all 0.6s;
+		  }
     </style>
   </head>
   <body>
     <div class="container-fluid" style="background-color: #2a2a2a;background-image: url('public/images/close-up-code-coding-160107.jpg');background-repeat: no-repeat;background-size: cover;"> 
    		<div class="black"></div>
+   		<div class="container-fluid header">
+   			<div class="container">
+	   			<div class="row">
+	   				<div class="col-lg-5">
+	   					<div class="wrapper-logo" >
+	   						<img class="logo" src="public/images/yandev.png">
+	   					</div>
+	   					<span class="title-logo">Yan<b>Dev</b></span>
+	   				</div>
+	   				<div class="col-lg-7" style="text-align: right">
+	   					<ul>
+	   						<li>
+	   							<a href="#">
+	   								Home
+	   							</a>
+	   						</li>
+	   						<li>
+	   							<a href="#about">
+	   								About
+	   							</a>
+	   						</li>
+	   						<li>
+	   							<a href="#service">
+	   								Service
+	   							</a>
+	   						</li>
+	   						<li>
+	   							<a href="#resume">
+	   								Resume
+	   							</a>
+	   						</li>
+	   						<li>
+	   							<a href="#contact">
+	   								Contact
+	   							</a>
+	   						</li>
+	   					</ul>
+	   				</div>
+	   			</div>
+   			</div>
+   		</div>
       <div class="container" style="padding-bottom: 150px;">
-	      <div class="row">
-	      	<div class="col-lg-5">
-	      		<div class="wrapper-logo" >
-	      			<img class="logo" src="public/images/yandev.png">
-	      			<span class="title-logo">Yan<b>Dev</b></span>
-	      		</div>
-	      	</div>
-	      	<div class="col-lg-7" style="text-align: right">
-	      		<ul>
-	      			<li>
-	      				<a href="#">
-	      					Home
-	      				</a>
-	      			</li>
-	      			<li>
-	      				<a href="#about">
-	      					About
-	      				</a>
-	      			</li>
-	      			<li>
-	      				<a href="#service">
-	      					Service
-	      				</a>
-	      			</li>
-	      			<li>
-	      				<a href="#resume">
-	      					Resume
-	      				</a>
-	      			</li>
-	      			<li>
-	      				<a href="#contact">
-	      					Contact
-	      				</a>
-	      			</li>
-	      		</ul>
-	      	</div>
-	      </div>
 	      <div class="row">
 	      	<div class="col-lg-12">
 	      		<h3 style="font-weight: 700;
@@ -478,6 +515,19 @@
            });
          } // End if
        });
+
+        // event scroll for sticky header. 
+        $(window).scroll(function(){
+				  var sticky = $('.header'),
+				      scroll = $(window).scrollTop();
+
+				  if (scroll >= 128) {
+				  	sticky.addClass('fixed');
+				  	sticky.addClass('fixed');
+				  } else {
+				  	sticky.removeClass('fixed');
+				  }
+				});
      });
      </script>
   </body>
